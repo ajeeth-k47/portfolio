@@ -1,0 +1,187 @@
+
+body{
+    background-color: #A084E8;
+}
+
+#portfolio_header{
+    display: flex;
+    gap:10px;
+    padding: 10px;
+    background-color: whitesmoke;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.jumbotron {
+    padding: 2rem 1rem;
+    margin: 2rem 10px;
+    background-color: #e9ecef;
+    border-radius: 0.3rem;
+}
+
+#my_photo{
+    text-align: center;
+    flex: 1.5;
+    padding: 25px;
+    font-weight: bold;
+}
+#my_photo h5{
+    color: #777679;
+}
+
+
+#portfolio_header ul, #education_content ul{
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+#social_media{
+    flex: 3.5;
+    animation: boxtransition 0.3s;
+    box-shadow: 5px 5px 5px #aaaaaa;
+}
+
+.circle_image{
+    border-radius: 100%;
+}
+
+#objective_education,#experience{
+    background-color: #6F61C0;
+    color:whitesmoke;
+}
+
+#summary_content,#education_content,#skill_content,#experience_content{
+    display: flex;
+    gap:50px;
+    align-items: center;
+}
+
+.summary_animation{
+    animation: fadeimage 2s infinite;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.experience_animation{
+    animation:heartbeat 1s infinite;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.separator_style{
+    border-color: #D0BFFF;
+    border-width: 10px;
+    max-width: 10%;
+    border-style: none;
+    border-top-style: dotted;
+    margin:auto;
+}
+
+#skill_experience,#project_achievements{
+    background-color:whitesmoke;
+}
+
+#skill_content{
+    padding:10px 20px;
+    margin-left: 5%;
+}
+
+
+#skill_content .card-title{
+    color:#6F61C0;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.25em 0.4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+}
+
+.badge-success{
+    color: #fff;
+    background-color: #28a745;
+}
+
+.badge-primary{
+    color: #fff;
+    background-color: #007bff;
+}
+
+.tools_techstack{
+    font-weight: bold;
+}
+
+#project_achievements li,#project_achievements h5{
+  padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+@media (max-width:600px){
+    #portfolio_header, #education_content{
+        flex-direction: column;
+        margin-left: 0px;
+    }
+
+    #summary_content,#experience_content{
+        flex-direction: column-reverse;
+        gap:10px
+    }
+    #my_photo{
+        order:-1;
+    }
+    .separator_style{
+        padding-bottom: 20px;
+        max-width: 20%;
+    }
+}
+
+
+@media (max-width:1100px){
+    #skill_content{
+        flex-direction: column;
+        margin-left: 0px;
+    }
+}
+
+@keyframes boxtransition{
+    from{
+       transform: translate(20%);
+    }
+    to{
+       transform: translate(0%);
+    }
+}
+
+@keyframes fadeimage{
+    from{
+        opacity:-1;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+
+@keyframes heartbeat {
+    from{
+      color:red;
+    }
+    to{
+      color:whitesmoke;
+    }
+}
+
+
+
+
